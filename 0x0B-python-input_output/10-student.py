@@ -30,5 +30,4 @@ class Student:
         if type(attrs) is list and \
         all(type(element) is str for element in attrs):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-            print("Wamlambez {}", k)
         return self.__dict__
