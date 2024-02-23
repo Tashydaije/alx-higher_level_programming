@@ -28,7 +28,9 @@ def main():
     database = args[2]
     db_port = 3306
     query = """
-    SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY states.id ASC;
+    SELECT * FROM states
+    WHERE states.name LIKE 'N%'
+    ORDER BY states.id ASC;
     """
     db_connection = dbConnect(
         host=db_host,
