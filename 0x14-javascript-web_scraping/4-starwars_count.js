@@ -6,7 +6,7 @@ const apiUrl = process.argv[2];
 
 const characterId = 18;
 
-request.get(apiUrl, (err, res, body) => {
+request(apiUrl, (err, res, body) => {
   if (err) {
     console.log(err);
   }
